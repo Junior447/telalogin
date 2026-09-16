@@ -1,7 +1,7 @@
 
 
 class Cadastro {
-
+   #contato = 5511958480468;
    constructor() {
       //declara dentro do construtor o DOM
       const nome = document.querySelector('#nome')
@@ -21,6 +21,8 @@ class Cadastro {
       this.mnsErro = mnsErro;
       this.whatsapp = whatsapp;
       this.btn = btn;
+      this.#contato = this.#contato;
+      
 
    }
 
@@ -48,9 +50,9 @@ class Cadastro {
 
 
             const mensagem = `Olá tudo bem meu nome é ${this.nome.value} 
-         vi seu número ${contato} e tenho ${this.idade.value}, meu estado civil é ${this.estadocivil.value}
+         vi seu número ${this.#contato} e tenho ${this.idade.value}, meu estado civil é ${this.estadocivil.value}
          `
-            const url = `https://wa.me/${contato}?text=${encodeURIComponent(mensagem)}`;
+            const url = `https://wa.me/${this.#contato}?text=${encodeURIComponent(mensagem)}`;
             window.open(url, '_blank')
 
             //reset
@@ -70,7 +72,7 @@ class Cadastro {
 
 const novocadastro = new Cadastro();
 novocadastro.eventoInput()
-novocadastro.contatoWhatsapp(11958480468)
+novocadastro.contatoWhatsapp()
 
 
 
