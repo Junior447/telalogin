@@ -11,7 +11,7 @@ main.principal{
   align-items: center;
   padding: 20px 50px;
   background-color: black;
-  min-height: 1050vh;
+  
   
  
 }
@@ -97,11 +97,10 @@ a.whatsapp{
   margin-top: 20px;
   outline: none;
 }
-@media (max-width:800px) {
+@media (max-width:700px) {
   main.principal{
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 0px 20px;
     position: none;
   }
