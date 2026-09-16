@@ -10,7 +10,7 @@ main.principal{
   align-items: center;
   padding: 20px 50px;
   background-color: black;
-  heigth: 600px
+  heigth: auto;
   
   
  
@@ -103,6 +103,7 @@ a.whatsapp{
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
+    heigth: auto;
   }
   
 }
